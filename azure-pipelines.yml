@@ -49,7 +49,7 @@ steps:
     tags: $(DATE_TAG)-$(TAG)
     arguments: |
       --build-arg BASE_IMAGE=$(BASE_IMAGE)
-      --build-arg SPACK_INSTALL_SPEC=$(SPACK_INSTALL_SPEC) 
+      --build-arg SPACK_INSTALL_SPEC="$(SPACK_INSTALL_SPEC)"
 - task: Docker@2
   displayName: Push image
   inputs:
