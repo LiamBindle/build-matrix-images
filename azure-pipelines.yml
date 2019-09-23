@@ -30,7 +30,7 @@ strategy:
     bmi_6:
       BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-ubuntu
       SPACK_INSTALL_SPEC: esmf%gcc@4 ^openmpi@3.0.4%gcc@4 esmf%gcc@5 ^openmpi@3.0.4%gcc@5 esmf%gcc@6 ^openmpi@3.0.4%gcc@6 esmf%gcc@7 ^openmpi@3.0.4%gcc@7 esmf%gcc@8 ^openmpi@3.0.4%gcc@8 esmf%gcc@9 ^openmpi@3.0.4%gcc@9
-      TAG:                ubuntu-gcc-openmpi3.1.4-esmf
+      TAG:                ubuntu-gcc-openmpi3.0.4-esmf
 
 # Steps to build images
 steps:

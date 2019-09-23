@@ -4,7 +4,6 @@ FROM ${BASE_IMAGE}
 MAINTAINER Liam Bindle <liam.bindle@gmail.com>
 
 ARG SPACK_INSTALL_SPEC
-COPY install. /
 RUN source /usr/local/Modules/init/bash \
 &&  . ${SPACK_ROOT}/share/spack/setup-env.sh \
 &&  spack install ${SPACK_INSTALL_SPEC}
