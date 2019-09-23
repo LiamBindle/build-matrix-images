@@ -1,0 +1,1 @@
+[![Build Status](https://dev.azure.com/lrbindle/build-matrix-images/_apis/build/status/LiamBindle.build-matrix-images?branchName=master)](https://dev.azure.com/lrbindle/build-matrix-images/_build/latest?definitionId=4&branchName=master)
