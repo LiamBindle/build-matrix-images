@@ -17,20 +17,20 @@ strategy:
       TAG:                ubuntu-gcc-netcdf4.2.1-netcdff4.4.5
     bmi_3:
       BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-centos
-      SPACK_INSTALL_SPEC: netcdf@4.7.1%gcc@8 netcdf-fortran@4.5.2%gcc@8
-      TAG:                centos-gcc8-netcdf4.7.1-netcdf-4.5.2
-    bmi_4:
-      BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-ubuntu
-      SPACK_INSTALL_SPEC: esmf%gcc@8 ^openmpi@3.1.4%gcc@8
-      TAG:                ubuntu-gcc8-openmpi3.1.4-esmf
+      SPACK_INSTALL_SPEC: netcdf@4.7.1 netcdf-fortran@4.5.2
+      TAG:                centos-gcc4-netcdf4.7.1-netcdf-4.5.2
+    bmi_3:
+      BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-centos
+      SPACK_INSTALL_SPEC: esmf ^mvapich2
+      TAG:                centos-gcc4-mvapich2-esmf
     bmi_5:
       BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-ubuntu
-      SPACK_INSTALL_SPEC: esmf%gcc@8 ^mpich@3.3.1%gcc@8
-      TAG:                ubuntu-gcc8-mpich3.3.1-esmf
+      SPACK_INSTALL_SPEC: esmf%gcc@8 ^mpich%gcc@8
+      TAG:                ubuntu-gcc8-mpich-esmf
     bmi_6:
       BASE_IMAGE:         liambindle/build-matrix-images-base:19.09-ubuntu
-      SPACK_INSTALL_SPEC: esmf%gcc@4 ^openmpi@3.0.4%gcc@4 esmf%gcc@5 ^openmpi@3.0.4%gcc@5 esmf%gcc@6 ^openmpi@3.0.4%gcc@6 esmf%gcc@7 ^openmpi@3.0.4%gcc@7 esmf%gcc@8 ^openmpi@3.0.4%gcc@8 esmf%gcc@9 ^openmpi@3.0.4%gcc@9
-      TAG:                ubuntu-gcc-openmpi3.0.4-esmf
+      SPACK_INSTALL_SPEC: esmf%gcc@4 ^openmpi%gcc@4 esmf%gcc@5 ^openmpi%gcc@5 esmf%gcc@6 ^openmpi%gcc@6 esmf%gcc@7 ^openmpi%gcc@7 esmf%gcc@8 ^openmpi%gcc@8 esmf%gcc@9 ^openmpi%gcc@9
+      TAG:                ubuntu-gcc-openmpi-esmf
 
 # Steps to build images
 steps:
